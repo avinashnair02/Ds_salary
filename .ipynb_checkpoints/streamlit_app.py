@@ -26,7 +26,7 @@ st.markdown(
 
 #model = joblib.load('model.pkl')
 def load_models():
-    file_name = "models/model_file.p"
+    file_name = "model_file.p"
     with open(file_name, 'rb') as pickled:
         data = pickle.load(pickled)
         model = data['model']
