@@ -8,20 +8,26 @@ import sklearn
 
 df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
-st.title('Data Scientist Salary Predictor (COVID -19)')
-st.markdown(
-    """
-    <style>
-    .reportview-container {
-        background: url("url_goes_here")
-    }
-   .sidebar .sidebar-content {
-        background: url("url_goes_here")
-    }
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+st.title('Data Scientist Salary Predictor')
+st.title('Covid-19')
+
+page_bg_img = '''
+<style>
+body {
+background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80");
+background-size: cover;
+
+}
+.block-container {
+    backdrop-filter: blur(0px);
+}
+.markdown-text-container > h1{text-align:center}
+</style>
+
+'''
+
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 #model=joblib.Model('model.pkl')
 #loaded_model = pickle.load(open(finalized_model.sav, 'rb'))
