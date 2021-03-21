@@ -2,7 +2,7 @@
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
 
-- Created a web application (access it [here]('https://dspred.herokuapp.com/')) that estimates Data Science salaries (MAE~\$20k) to help data scientists better understand what salaries they might expect during COVID-19
+- Created a web application (access it [here](https://dspred.herokuapp.com/))that estimates Data Science salaries (MAE~\$20k) to help data scientists better understand what salaries they might expect during COVID-19
 - Webscraped job data from Glassdoor using Selenium and Chromedriver
 - Feature engineered from the text of the job description to quantify the value companies place on skills like Python, R, AWS, Hadoop and many other skills, and also knowledge required typically like Algorithmic Knowledge and Statistical Knowledge.
 - Optimized Linear, Lasso and Random Forest Regressors using GridsearchCV to reach the best model.
@@ -54,7 +54,8 @@ Some interesting results from the EDA:
 
 ## Web Application Interface
 
-The web application was built using Streamlit and deployed using Heroku. It can be accessed at [this URL]('https://dspred.herokuapp.com/'). If I've taken it down for some reason, here's what the UI looked like:
+The web application was built using Streamlit and deployed using Heroku. It can be accessed at 
+[this URL](https://dspred.herokuapp.com/). If I've taken it down for some reason, here's what the UI looked like:
 
 
 
