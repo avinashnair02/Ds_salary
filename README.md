@@ -38,9 +38,9 @@ Some interesting results from the EDA:
 
 ![Plot1](/images/2.png)
 
-![Plot2](/images/corr.png)
+![Plot2](/images/cor.png)
 
-![Plot3](/images/5.png)
+![Plot3](/images/s.png)
 
 
 ## Web Application Interface
