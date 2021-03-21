@@ -15,11 +15,12 @@ page_bg_img = '''
 <style>
 body {
 background-image: url("https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80");
+background-repeat: no-repeat;
 background-size: cover;
 
 }
 .block-container {
-    backdrop-filter: blur(0px);
+    backdrop-filter: blur(10px);
 }
 .markdown-text-container > h1{text-align:center}
 </style>
