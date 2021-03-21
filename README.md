@@ -36,13 +36,12 @@ Comparisions were made with a Linear Regression Model (MAE ~25K), Lasso Regressi
 
 Some interesting results from the EDA:
 
-![Plot1](/images/plot1.png)
+![Plot1](/images/2.png)
 
-![Plot2](/images/plot2.png)
+![Plot2](/images/corr.png)
 
-![Plot3](/images/plot3.png)
+![Plot3](/images/5.png)
 
-![Plot4](/images/plot4.png)
 
 ## Web Application Interface
 
