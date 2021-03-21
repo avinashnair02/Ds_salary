@@ -7,12 +7,12 @@ import sklearn
 
 df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
-st.title('Data Scientist Salary Predctor (COVID -19)')
+st.title('Data Scientist Salary Predictor (COVID -19)')
 
 model=joblib.Model('model.pkl')
 
 st.markdown(
-    "**All the fileds are mandatory")
+    "**All the fields  are mandatory")
 
 st.subheader('Company Details: \n Check Glassdoor for exact values, if unsure')
 rating = st.slider('Glassdoor Rating of the Company',
