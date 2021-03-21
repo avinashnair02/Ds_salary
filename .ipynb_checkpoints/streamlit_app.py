@@ -9,8 +9,30 @@ import joblib
 df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
 st.title('Data Scientist Salary Predctor (COVID -19)')
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("url_goes_here")
+    }
+   .sidebar .sidebar-content {
+        background: url("url_goes_here")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
-model = joblib.load('model.pkl')
+
+#model = joblib.load('model.pkl')
+def load_models():
+    file_name = "models/model_file.p"
+    with open(file_name, 'rb') as pickled:
+        data = pickle.load(pickled)
+        model = data['model']
+    return model
+
+
 
 st.markdown(
     "**All the fields are mandatory")

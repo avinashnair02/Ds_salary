@@ -9,6 +9,19 @@ import sklearn
 df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
 st.title('Data Scientist Salary Predictor (COVID -19)')
+st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("url_goes_here")
+    }
+   .sidebar .sidebar-content {
+        background: url("url_goes_here")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
 
 #model=joblib.Model('model.pkl')
 #loaded_model = pickle.load(open(finalized_model.sav, 'rb'))
