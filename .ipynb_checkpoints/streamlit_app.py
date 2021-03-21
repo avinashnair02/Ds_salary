@@ -112,6 +112,7 @@ features = [rating, jobhq,  age, num_comp,  python_yn, r_yn, aws_yn, spark_yn, h
 final_features = np.array(features).reshape(1, -1)
 
 if st.button('Predict'):
+    model = load_models()
     prediction = model.predict(final_features)
     st.balloons()
     st.success(f'Your predicted salary is US$ {round(prediction[0],3)*1000} ')
