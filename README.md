@@ -14,6 +14,15 @@
 
 During the COVID-19 pandemic, employment levels have reached new lows. The tech industry has also been affected by this, and subsequently, Data Scientists as well. Being able to get a good job right now, with a salary proportionate to the skills they possess is important, and at the same time, much more different compared to more normal period of time. This tool provides a means to help estimate how much salary one might recieve right now, based on their skills, as well as the company hiring them.
 
+## Resourse Used:
+
+Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
+For Web Framework Requirements: pip install -r requirements.txt
+Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium
+Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
+Flask Productionization: https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
+
+
 ## Technologies Used
 
 This project primarily uses Selenium 3.141.0, Numpy 1.18.3, Pandas 1.0.4, Joblib 0.15.1, Scikit_Learn 0.23.1 and Streamlit 0.61.0.
@@ -26,7 +35,7 @@ pip install -r requirements.txt
 
 ## Environment Used
 
-The Web Scraper code and the Streamlit code were run in a VSCode environment. The Data Cleaning, Exploratory Data Analysis and Model Building were run in a Jupyter Notebook environment.
+The Web Scraper code and the Streamlit code were run in a VSCode environment. The Data Cleaning, Exploratory Data Analysis and Model Building were run in a Jupyter Notebook/Spyder(IDE) environment.
 
 ## Models Used
 
