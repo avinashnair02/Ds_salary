@@ -1,5 +1,6 @@
 import streamlit as st
 import joblib
+import pickle
 import numpy as np
 import pandas as pd
 import sklearn
@@ -9,7 +10,15 @@ df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
 st.title('Data Scientist Salary Predictor (COVID -19)')
 
-model=joblib.Model('model.pkl')
+#model=joblib.Model('model.pkl')
+#loaded_model = pickle.load(open(finalized_model.sav, 'rb'))
+
+def load_models():
+    file_name = "models/model_file.p"
+    with open(file_name, 'rb') as pickled:
+        data = pickle.load(pickled)
+        model = data['model']
+    return model
 
 st.markdown(
     "**All the fields  are mandatory")

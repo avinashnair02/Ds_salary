@@ -10,7 +10,7 @@ df=pd.read_csv('glassdoor_jobs_cleaned.csv')
 
 st.title('Data Scientist Salary Predctor (COVID -19)')
 
-md=joblib.load('md.pkl')
+model = joblib.load('model.pkl')
 
 st.markdown(
     "**All the fields are mandatory")
