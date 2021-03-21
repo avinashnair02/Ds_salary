@@ -16,10 +16,13 @@ During the COVID-19 pandemic, employment levels have reached new lows. The tech 
 
 ## Resourse Used:
 
-Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, flask, json, pickle
-For Web Framework Requirements: pip install -r requirements.txt
+Packages: pandas, numpy, sklearn, matplotlib, seaborn, selenium, json,Joblib
+
+
 Scraper Github: https://github.com/arapfaik/scraping-glassdoor-selenium
+
 Scraper Article: https://towardsdatascience.com/selenium-tutorial-scraping-glassdoor-com-in-10-minutes-3d0915c6d905
+
 Flask Productionization: https://towardsdatascience.com/productionize-a-machine-learning-model-with-flask-and-heroku-8201260503d2
 
 
