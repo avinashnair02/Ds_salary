@@ -53,7 +53,7 @@ st.subheader('Details about the Job:')
 
 jobhq = st.radio(
     "Is the Job at Headquarters? (0 for No, 1 for Yes)", options=[0, 1])
-job_type_num = st.selectbox("Job Type",
+job_type_num = st.selectbox("Job Place",
                             options=df["job_state"].unique())
         
 def number_simplifier(role):
@@ -71,10 +71,6 @@ def number_simplifier(role):
         return 6
     elif role == "na":
         return 7
-    elif role == "research":
-        return 8
-    elif role == "sw":
-        return 9
 
 
 job_type_num1 = number_simplifier(job_type_num)
@@ -93,9 +89,9 @@ len_desc = st.number_input('Character Length of the Job Description', step=1.0)
 
 st.subheader('Your skills:')
 python_yn = st.radio("Python (0 for No, 1 for Yes)", options=[0, 1])
-r_yn = st.radio("R (0 for No, 1 for Yes)", options=[0, 1])
-aws_yn = st.radio("AWS (0 for No, 1 for Yes)", options=[0, 1])
-spark_yn = st.radio("Spark (0 for No, 1 for Yes)", options=[0, 1])
+#r_yn = st.radio("R (0 for No, 1 for Yes)", options=[0, 1])
+aws = st.radio("AWS (0 for No, 1 for Yes)", options=[0, 1])
+spark = st.radio("Spark (0 for No, 1 for Yes)", options=[0, 1])
 hadoop_yn = st.radio("Hadoop (0 for No, 1 for Yes)", options=[0, 1])
 docker_yn = st.radio("Docker (0 for No, 1 for Yes)", options=[0, 1])
 sql_yn = st.radio("SQL (0 for No, 1 for Yes)", options=[0, 1])
@@ -112,9 +108,8 @@ stats_yn = st.radio(
     "Strong Statistical Knowledge (0 for No, 1 for Yes)", options=[0, 1])
 
 
-features = [rating, jobhq,  age, num_comp,  python_yn, r_yn, aws_yn, spark_yn, hadoop_yn,
-            docker_yn, sql_yn, linux_yn, flask_yn, django_yn, tensorflow_yn, keras_yn,
-            pytorch_yn, tableau_yn, algo_yn, stats_yn, job_type_num1, seniority_num1, len_desc]
+features = [avg_salary,Rating,Size,Type of ownership,Industry,Sector,Revenue,num_comp,hourly,employer_provided,
+            job_state,same_state,age,python_yn,spark,aws,excel,job_simp,seniority,desc_len]
 final_features = np.array(features).reshape(1, -1)
 
 if st.button('Predict'):
