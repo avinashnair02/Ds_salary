@@ -53,7 +53,7 @@ st.subheader('Details about the Job:')
 
 jobhq = st.radio(
     "Is the Job at Headquarters? (0 for No, 1 for Yes)", options=[0, 1])
-job_type_num = st.selectbox("Job Place",
+job_type_num = st.selectbox("Job State",
                             options=df["job_state"].unique())
         
 def number_simplifier(role):
@@ -91,25 +91,24 @@ st.subheader('Your skills:')
 python_yn = st.radio("Python (0 for No, 1 for Yes)", options=[0, 1])
 #r_yn = st.radio("R (0 for No, 1 for Yes)", options=[0, 1])
 aws = st.radio("AWS (0 for No, 1 for Yes)", options=[0, 1])
-spark = st.radio("Spark (0 for No, 1 for Yes)", options=[0, 1])
-hadoop_yn = st.radio("Hadoop (0 for No, 1 for Yes)", options=[0, 1])
-docker_yn = st.radio("Docker (0 for No, 1 for Yes)", options=[0, 1])
-sql_yn = st.radio("SQL (0 for No, 1 for Yes)", options=[0, 1])
-linux_yn = st.radio("Linux (0 for No, 1 for Yes)", options=[0, 1])
-flask_yn = st.radio("Flask (0 for No, 1 for Yes)", options=[0, 1])
-django_yn = st.radio("Django (0 for No, 1 for Yes)", options=[0, 1])
-tensorflow_yn = st.radio("Tensorflow (0 for No, 1 for Yes)", options=[0, 1])
-keras_yn = st.radio("Keras (0 for No, 1 for Yes)", options=[0, 1])
-pytorch_yn = st.radio("PyTorch (0 for No, 1 for Yes)", options=[0, 1])
-tableau_yn = st.radio("Tableau (0 for No, 1 for Yes)", options=[0, 1])
-algo_yn = st.radio(
-    "Strong Algorithmic Knowledge (0 for No, 1 for Yes)", options=[0, 1])
-stats_yn = st.radio(
-    "Strong Statistical Knowledge (0 for No, 1 for Yes)", options=[0, 1])
-
-
-features = [avg_salary,Rating,Size,Type of ownership,Industry,Sector,Revenue,num_comp,hourly,employer_provided,
-            job_state,same_state,age,python_yn,spark,aws,excel,job_simp,seniority,desc_len]
+#spark = st.radio("Spark (0 for No, 1 for Yes)", options=[0, 1])
+excel = st.radio("Hadoop (0 for No, 1 for Yes)", options=[0, 1])
+#docker_yn = st.radio("Docker (0 for No, 1 for Yes)", options=[0, 1])
+#sql_yn = st.radio("SQL (0 for No, 1 for Yes)", options=[0, 1])
+#linux_yn = st.radio("Linux (0 for No, 1 for Yes)", options=[0, 1])
+#flask_yn = st.radio("Flask (0 for No, 1 for Yes)", options=[0, 1])
+#django_yn = st.radio("Django (0 for No, 1 for Yes)", options=[0, 1])
+excel = st.radio("Tensorflow (0 for No, 1 for Yes)", options=[0, 1])
+#keras_yn = st.radio("Keras (0 for No, 1 for Yes)", options=[0, 1])
+#pytorch_yn = st.radio("PyTorch (0 for No, 1 for Yes)", options=[0, 1])
+#tableau_yn = st.radio("Tableau (0 for No, 1 for Yes)", options=[0, 1])
+#algo_yn = st.radio(
+    #"Strong Algorithmic Knowledge (0 for No, 1 for Yes)", options=[0, 1])
+#stats_yn = st.radio(
+    #"Strong Statistical Knowledge (0 for No, 1 for Yes)", options=[0, 1])
+    
+features = [avg_salary,Rating,Size,Type of ownership,Industry,Sector,Revenue,num_comp,hourly,employer_provided,job_state,
+            same_state,age,python_yn,spark,aws,excel,job_simp,seniority,desc_len]
 final_features = np.array(features).reshape(1, -1)
 
 if st.button('Predict'):
