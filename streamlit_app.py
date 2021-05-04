@@ -107,7 +107,7 @@ excel = st.radio("Tensorflow (0 for No, 1 for Yes)", options=[0, 1])
 #stats_yn = st.radio(
     #"Strong Statistical Knowledge (0 for No, 1 for Yes)", options=[0, 1])
     
-features = [avg_salary,Rating,Size,Type of ownership,Industry,Sector,Revenue,num_comp,hourly,employer_provided,job_state,
+features = [avg_salary,Rating,Size,Industry,Sector,Revenue,num_comp,hourly,employer_provided,job_state,
             same_state,age,python_yn,spark,aws,excel,job_simp,seniority,desc_len]
 final_features = np.array(features).reshape(1, -1)
 
