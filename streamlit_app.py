@@ -6,7 +6,7 @@ import pandas as pd
 import sklearn
 # imported the required dependicies
 
-df=pd.read_csv('glassdoor_jobs_cleaned.csv')
+df=pd.read_csv('salary_data_cleaned.csv')
 
 st.title('Data Scientist Salary Predictor')
 st.title('Covid-19')
