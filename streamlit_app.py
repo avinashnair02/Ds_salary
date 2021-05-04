@@ -54,7 +54,7 @@ st.subheader('Details about the Job:')
 jobhq = st.radio(
     "Is the Job at Headquarters? (0 for No, 1 for Yes)", options=[0, 1])
 job_type_num = st.selectbox("Job Type",
-                            options=df["job_type"].unique())
+                            options=df["job_state"].unique())
         
 def number_simplifier(role):
     if role == "data scientist":
